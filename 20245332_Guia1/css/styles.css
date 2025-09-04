@@ -1,0 +1,88 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9fafb;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+.main-title{
+    font-family: 'Montserrat', sans-serif;
+    color: #2980b9;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 20px;
+}
+.subtitle{
+    font-family: 'Montserrat', sans-serif;
+    color: #3498db;
+    font-size:  2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.intro-text{
+    font-size: 1.2em;
+    color: #34495e;
+    text-align: center;
+}
+.country-section {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}
+.country-image {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.country-section h3{
+    color: #e74c3c;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+.country-section p{
+    font-size: 1em;
+    color: #2c3e50;
+    width: 80%;
+    margin: 0 auto 20px auto;
+    text-align: justify;
+}   
+
+a {
+    color: #8e44ad;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a:hover {
+    color: #9b59b6;
+    text-decoration: underline;
+}
+
+.country-table{
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.country-table th, .country-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.country-table th{
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-text{
+    font-size:  1.1 em;
+    text-align: center;
+    margin-top: 20px;
+    color: #7f8c8d;
+    font-family: 'Montserrat', sans-serif;
+}

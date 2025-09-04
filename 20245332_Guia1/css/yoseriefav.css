@@ -1,0 +1,180 @@
+
+*{ box-sizing: border-box; }
+:root{
+  --fondo:#eef3ef;      
+  --tarjetas:#ffffff; 
+  --texto:#18231c;     
+  --texto2:#4b5a52;   
+  --resaltado:#124734;  
+  --hover:#cae6d6;  
+  --color-borde:#e6eee9;  
+  --radius:14px;
+  --shadow:0 8px 24px rgba(0,0,0,.08);
+}
+
+body{
+    background-color: var(--fondo);
+    color: var(--texto);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* HEADER */
+
+.header{
+  background: linear-gradient(120deg, #0f2e2a, #144d3b);
+  color: var(--resaltado);
+  top: 0;
+  background-color: var(--tarjetas);
+  border-bottom: 1px solid rgba(0,0,0,.08);
+}
+
+header h1{
+    color: #f4fff8;
+    text-align: center;
+    font-size: 2.5em;
+    padding: 16px 0 8px;
+    margin: 0;
+}
+
+.nav_principal{
+  display:flex;
+  justify-content:center;
+  padding: 8px 0 16px;
+}
+
+.nav_list{
+  display:flex;
+  gap:16px;
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+.nav_link{
+  color: #f4fff8;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: bold;           
+}
+
+.nav_link:hover,.nav_link:focus-visible{
+  background: var(--color-borde);
+  color: var(--resaltado);
+  outline: none;
+}
+
+
+/* SECCIONES */
+
+.section{
+    padding: 40px 0;
+    margin: 0 auto;
+}
+
+.section_title{
+    color: var(--resaltado);
+    font-size: 2em;
+    line-height: 1.2;
+    text-align: center;
+}
+
+#inicio p{
+  max-width: 72ch;
+  margin: 0 auto;
+  text-align: justify;
+  background: var(--hover);
+  padding: 10px 10px;
+  border-radius: 12px;
+}
+
+/* TEMPORADAS */
+
+.temporadas {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--hover);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--color-borde);
+}
+
+.temporadas thead {
+  background: var(--resaltado);
+  color: #f4fff8;
+}
+
+.temporadas th, .temporadas td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--color-borde);
+}
+
+.temporadas img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Personajes */
+
+.lista_personajes{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.img_personaje{ width:100%; aspect-ratio:4/3; object-fit:cover; }
+
+.articulo_personaje{
+  background: var(--tarjetas);
+  border: 1px solid var(--color-borde);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.contenido_personaje{ padding:14px 16px 16px; }
+.personaje_titulo{ margin:0 0 6px; color:var(--resaltado); font-size:1.5em; }
+.personaje_texto{ margin:0; color:var(--texto2); }
+
+/* Mejores episodios */
+
+.episodes{
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+  display: inline;
+  gap: 16px;
+}
+
+.episodes__item{
+  background: var(--tarjetas);
+  border:1px solid var(--color-borde);
+  border-radius:12px; padding:12px 14px;
+  box-shadow:0 2px 10px rgba(0,0,0,.05);
+  margin: 0 0 16px;
+}
+
+.temp_episodio{
+  display:inline-block; background:var(--resaltado); color: #f4fff8;
+  padding:2px 10px; border-radius:999px; font-weight:700; margin-right:8px;
+}
+
+.episodes__item p{ margin:8px 0 0;}
+
+/* FOOTER */
+
+.footer{
+  background:#0f1c18; color:#e5fff3;
+  padding:22px 0; text-align:center;
+  border-top:1px solid rgba(255,255,255,.06);
+}
+
+
+
+
+
