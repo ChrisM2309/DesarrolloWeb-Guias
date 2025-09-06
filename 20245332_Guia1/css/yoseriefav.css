@@ -16,10 +16,12 @@ body{
     background-color: var(--fondo);
     color: var(--texto);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
     line-height: 1.5;
 }
 
+main{
+  margin: 0 10%;;
+}
 /* HEADER */
 
 .header{
@@ -112,8 +114,9 @@ header h1{
 }
 
 .temporadas img{
-  width: 150px;
-  height: 150px;
+  width: 70%;
+  max-width: 150px;
+  height: 70%;
   object-fit: cover;
 }
 
@@ -126,7 +129,14 @@ header h1{
   margin-top: 24px;
 }
 
-.img_personaje{ width:100%; aspect-ratio:4/3; object-fit:cover; }
+.img_personaje{
+   width:80%; 
+   border-radius: 8px;
+   max-height: 500px;
+   object-fit:scale-down; 
+   display:block;
+   margin: 14px auto;
+  }
 
 .articulo_personaje{
   background: var(--tarjetas);
@@ -135,6 +145,7 @@ header h1{
   overflow: hidden;
   display: grid;
   grid-template-rows: auto 1fr;
+  padding: 0 auto;
 }
 
 .contenido_personaje{ padding:14px 16px 16px; }
