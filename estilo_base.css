@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  width: 92%;
+  width: 90%;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -97,18 +97,20 @@ body {
   border-radius: 10px;
   padding: 12px 14px;
   min-width: 180px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, .25);
 }
 
+.tarjeta.tarjeta-disponible .tarjeta-descripcion{
+  color: lightgreen;
+}
+.tarjeta.tarjeta-no-disponible .tarjeta-descripcion{
+  color: #e50914;
+}
+
+.tarjeta.tarjeta-disponible.tarjeta:hover{
+  border-color: lightgreen;
+}
 .tarjeta:hover {
   border-color: #e50914;
-}
-
-
-.tarjeta-no-disponible {
-  color: #a0a0a0;
-  border-style: line;
-  background: #141414;
 }
 
 .tarjeta-acento {
