@@ -20,7 +20,6 @@ body {
   padding: 16px 0;
 }
 
-
 .marca {
   margin: 0 auto;
   font-size: 2em;
@@ -32,7 +31,6 @@ body {
   color: #cfcfcf;
   font-size: 1.1em;
 }
-
 
 .nav_top { margin-top: 8px; }
 .nav_top-link {
@@ -97,12 +95,10 @@ body {
   border-color: #e50914; 
 }
 
-.tarjeta-disponible { cursor: pointer; }
 
 .tarjeta-no-disponible {
   color: #a0a0a0;
   border-style: line;
-  cursor: not-allowed;
   background: #141414;
 }
 
