@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #0f0f0f;
+  color: #f5f5f5;
+}
+
+main{
+  width: 85%;
+  margin: 0 auto;
+}
+
+/** Header del sitio */
+
+header h1{
+  text-align: center;
+}
+
+header{
+  align-items: center;
+}
+/** Nav */
+.nav-indices{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-indices li{
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  margin: 1%;
+  margin-bottom: 0;
+  padding: 1%;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+}
+
+.nav-indices li a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.nav-indices li:hover{
+  background-color:  rgba(169, 169, 169, 0.4);
+}
+
+.nav-indices li:hover > a{
+  color: white;
+  font-weight: 1000;
+}
+/** Secciones */
+
+section h2 {
+  margin: 8px 0 2px 0;
+  border-bottom: 1px solid #1e1e1e;
+  padding-bottom: 6px;
+  color: #ffffff;
+}
+
+/** Resumen */
+
+.resumen {
+  padding: 18px 0 28px 0;
+  border-bottom: 1px solid #1e1e1e;
+}
+
+.container-resumen {
+  display: flex;
+}
+.container-resumen img{
+  margin-right: 20px;
+  width: 25%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.container-resumen p {
+  color: #cfcfcf;
+  line-height: 1.6em;
+  text-align: justify;
+  align-content: center;
+}
+
+
+/** Formacion Academica */
+.educacion{
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.educacion li img{
+  margin: 0 auto;
+  display: flex;
+  width: 40%;
+  border-radius: 10px;
+
+}
+.educacion li{
+  margin: 1%;
+  border-radius: 10px;
+  padding: 1%;
+}
+.educacion li p{
+  text-align: justify;
+}
+.educacion li:hover{
+  background-color: rgba(169, 169, 169, 0.4)
+}
+
+/** Logros */
+
+.logros{
+  padding: 0;
+}
+.logros li{
+  list-style: none;
+  margin: 0 0 5px 0;
+  text-align: justify;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 4px;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.logros li h3{
+  margin-right: 2%;
+  max-width: 20%;  
+  padding: 1%;
+}
+
+.logros li:hover{
+  background-color: rgba(169, 169, 169, 0.4);
+}
+
+/** Expectativas */
+
+
+/** Contacto */
+.contacto{
+  display: flex;
+  list-style: none;
+  margin: 15px;
+  padding: 0;
+  justify-content: space-evenly;
+}
+
+.icono-red:hover{
+  stroke: blue;
+  width: 40;
+  height: 40px;
+}
+/** Footer */
+.footer {
+  background: #0d0d0d;
+  border-top: 1px solid #1e1e1e;
+  text-align: center;
+  padding: 16px 0;
+  color: #bdbdbd;
+}
