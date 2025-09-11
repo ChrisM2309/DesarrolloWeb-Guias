@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+html { scroll-behavior: smooth; }
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -83,6 +85,9 @@ section h2 {
   height: auto;
   border-radius: 10px;
 }
+.container-resumen img:hover{
+
+}
 
 .container-resumen p {
   color: #cfcfcf;
@@ -95,7 +100,9 @@ section h2 {
 #historia p{
   text-align: justify;
   text-indent: 5%;
+  size: 1.5 em;
 }
+
 
 /** Formacion Academica */
 .educacion{
@@ -142,14 +149,22 @@ section h2 {
 
 .logros li h3{
   margin-right: 2%;
-  max-width: 20%;  
+  max-width: 20%;
   padding: 1%;
   text-align: left;
 }
 
+.logros li p{
+  padding: 2%;
+  text-align: justify;
+}
 .logros li:hover{
   background-color: rgba(169, 169, 169, 0.4);
 }
+
+.logros li:first-child  { box-shadow:  0 -1px 0 #4e4e4e; }
+.logros li:last-child   { box-shadow:  0 1px 0 #4e4e4e; }
+
 
 /** Expectativas */
 
