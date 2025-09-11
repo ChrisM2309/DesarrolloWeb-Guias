@@ -7,8 +7,11 @@ body {
   color: #f5f5f5;
 }
 
+
+
 main{
   width: 85%;
+  max-width: 85%;
   margin: 0 auto;
 }
 
@@ -29,7 +32,6 @@ header{
   align-items: center;
   padding: 0;
   margin: 0;
-  display: flex;
 }
 
 .nav-indices li{
@@ -54,7 +56,7 @@ header{
 
 .nav-indices li:hover > a{
   color: white;
-  font-weight: 1000;
+  font-weight: 700;
 }
 /** Secciones */
 
@@ -89,6 +91,11 @@ section h2 {
   align-content: center;
 }
 
+/** Historia*/
+#historia p{
+  text-align: justify;
+  text-indent: 5%;
+}
 
 /** Formacion Academica */
 .educacion{
@@ -137,6 +144,7 @@ section h2 {
   margin-right: 2%;
   max-width: 20%;  
   padding: 1%;
+  text-align: left;
 }
 
 .logros li:hover{
@@ -157,7 +165,7 @@ section h2 {
 
 .icono-red:hover{
   stroke: blue;
-  width: 40;
+  width: 40px;
   height: 40px;
 }
 /** Footer */
