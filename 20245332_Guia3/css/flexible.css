@@ -1,0 +1,192 @@
+@import url(http://fonts.googleapis.com/css?family=Didact+Gothic);
+
+* {
+    font-family: 'Didact Gothic', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos iniciales */
+
+body {
+    margin: 0px;
+    background-color: #BBB;
+    color: #444;
+}
+
+h1 {
+    font-size: 1.3em;
+    text-align: center;
+    color: #464d52;
+}
+
+/** Id = Superior*/
+
+#superior {
+    width: 100%;
+    padding: 2% 0px;
+    background-color: #464d52;
+}
+
+#encabezado {
+    margin: 0px auto;
+    width: 80%;
+    min-width: 650px;
+    max-width: 960px;
+}
+
+#descripcion {
+    width: 37.5%;
+    height: auto;
+    background-color: #888;
+    flex: 0 0 37.5%;
+}
+
+#descripcion p {
+    margin: 5%;
+    color: white;
+    font-weight: bold;
+    line-height: 180%;
+    text-align: justify;
+}
+
+/* Hacer que la imagen en imgDesc flote */
+
+#imgDesc {
+    align-items: stretch;
+    display: flex;
+}
+
+#superior #encabezado #imgDesc img {
+    width: 62.5%;
+    height: auto;
+    display: block;
+    flex: 0 0 62.5%;
+}
+
+
+/*! CONTENIDO DEL SITIO */
+
+#contenido {
+    width: 80%;
+    margin: 0px auto;
+    min-width: 650px;
+    max-width: 960px;
+    clear: left;
+}
+
+footer {
+    text-align: center;
+    margin: 0;
+    font-size: .9em;
+    line-height: 2;
+    clear: both;
+    background-color: #464d52;
+    color: white;
+    width: 100%;
+}
+
+
+/** Estilos particulares para distintos div */
+
+.plan {
+    width: 26.7%;
+    padding: 2%;
+    background-color: white;
+    margin: 30px 1.5%;
+    border: solid 1px black;
+    border-radius: 10px;
+    float: left;
+    text-align: justify;
+}
+
+/* eliminar margenes innecesarios */
+
+#contenido div:nth-child(3n+1) {
+    margin-left: 0px;
+}
+
+#contenido div:nth-child(3n) {
+    margin-right: 0px;
+}
+
+/* BOTONES */
+
+.boton {
+    background-color: #464d52;
+    padding: 7px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+    font-size: 0.9em;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.boton:hover{
+    background: #5077c7;
+}
+
+.boton a{
+    text-decoration: none;
+    color:white;
+    width: 100%;
+    display: block;
+}
+
+/*! PAGINA PLANES */
+
+.planes{
+    width: 94%;
+    background: white;
+    padding: 1% 3%;
+
+}
+
+.planes h1{
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.planes .precio{
+    font-size: 1.1em;
+    margin: 20px 0px 5px;
+    padding-bottom: 15px;
+    border-bottom: solid 2px gray;
+    font-weight: bold;
+}
+
+/*! PAGINA GALERIA */
+
+#galeria .plan p{
+    text-align: center;
+    font-style: italic;
+}
+
+#galeria .plan{
+    font-size: 1em;
+    padding-bottom: 1px;
+    margin: 30px 1.4% 10px;
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+/** EJERCICIO COMPLEMENTARIO 3 */
+
+#superior #encabezado #logo{
+    margin: 2% 0px;
+    width: 21%;
+}
+
+.plan img{
+    width: 100%;
+    height: auto;
+}
+
+.planes img{
+    width: 100%;
+    border-radius: 15px;
+}
