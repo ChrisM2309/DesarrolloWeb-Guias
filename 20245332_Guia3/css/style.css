@@ -3,23 +3,30 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     font-family: 'Muli', sans-serif;
     text-align: justify;
+    padding-top: 130px;
+    padding-bottom: 70px;
 }
 
 header{
+    top: 0; left: 0; right: 0;
     background: #16A085;
     height: 130px;
-    overflow: hidden;
+    position: fixed;
+    z-index: 100;
 }
 
 footer{
-    margin-top: 20px;
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
     background: #16A085;
     height: 50px;
+    z-index: 100;
 }
 
 header div, footer div{
@@ -41,18 +48,17 @@ h2{
 section{
     margin: 0 auto;
     width: 90%;
-    overflow: hidden;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 0;
     position: relative;
 }
 
 section article{
-    box-sizing: border-box;
     font-size: 0.9rem;
     height: 340px;
-    flex: 32.33%;
+    flex: 0 0 32.33%;
     margin: 0.5%;
     border: 2px dashed #16A085;
     padding: 1%;
@@ -69,11 +75,6 @@ section article h3{
     text-align: center;
 }
 
-article{
-    margin: 0;
-    overflow: hidden;
-}
-
 footer{
     padding-top: 1rem;
 }
@@ -81,8 +82,5 @@ footer{
 
 section article:nth-child(2){
     background-color: rgba(70, 130, 180, 0.9);
-    position: static;
-    left: 100px;
-    top: 50px;
     display: none;
 }

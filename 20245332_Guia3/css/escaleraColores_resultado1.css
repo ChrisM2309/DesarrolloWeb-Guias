@@ -1,0 +1,40 @@
+/*! RESULTADO UNO */
+#diez_de_diamantes img{
+    position: relative;
+    top: 30px;
+    left: 100px;
+    z-index: 1;
+}
+
+/* Left aumentando de 15 en 15*/
+/* Bottom aumenta de 85 en 85*/
+
+#sota_de_diamantes img{
+    position: relative;
+    bottom: 55px;
+    left: 115px;
+    z-index: 2;
+}
+
+#reina_de_diamantes img{
+    position: relative;
+    bottom: 140px;
+    left: 130px;
+    z-index: 3;
+}
+
+#rey_de_diamantes img{
+    position: relative;
+    bottom: 225px;
+    left: 145px;
+    z-index: 4;
+}
+#as_de_diamantes img{
+    position: relative;
+    bottom: 305px;
+    left: 160px;
+    z-index: 5;
+}
+
+
+
