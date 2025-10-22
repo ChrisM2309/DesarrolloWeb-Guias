@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com*/css2?family=Bakback+One&display=swap');
+
+*{
+    font-family: 'Backback One', cursive;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+div {
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+span{
+    display: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: red;
+}
+
+/* PARA DISPOSITIVOS MOVILES */
+
+@media screen and (max-width: 480px){
+    html {
+        font-size: 14px;
+    }
+    body{
+        background-color: #03A8F4;
+    }
+    div {
+        width: 95%;
+    }
+    .smartphones{
+        display: inline-block;
+    }
+}
+
+/* PARA TABLETS */
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    html {
+        font-size: 15px;
+    }
+    body{
+        background-color: #FF9800;
+    }
+    div {
+        width: 85%;
+    }
+    .tablets{
+        display: inline-block;
+    }
+}
+
+/* PARA DESKTOPS */
+
+@media screen and (min-width: 769px){
+    html {
+        font-size: 16px;
+    }
+    body{
+        background-color: #BBBBBB;
+    }
+    div {
+        width: 75%;
+    }
+    .desktops{
+        display: inline-block;
+    }
+}   
