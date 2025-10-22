@@ -90,25 +90,28 @@ body {
 
 .tarjeta {
   display: inline-block;
-  background: #161616;
+  background-color: #bdbdbd15;
+  border: 1px solid #cfcfcf50;
+
   color: #f5f5f5;
   text-decoration: none;
-  border: 1px solid #262626;
   border-radius: 10px;
   padding: 12px 14px;
   min-width: 180px;
 }
 
-.tarjeta.tarjeta-disponible .tarjeta-descripcion{
+.tarjeta.tarjeta-disponible .tarjeta-descripcion {
   color: lightgreen;
 }
-.tarjeta.tarjeta-no-disponible .tarjeta-descripcion{
+
+.tarjeta.tarjeta-no-disponible .tarjeta-descripcion {
   color: #e50914;
 }
 
-.tarjeta.tarjeta-disponible.tarjeta:hover{
+.tarjeta.tarjeta-disponible.tarjeta:hover {
   border-color: lightgreen;
 }
+
 .tarjeta:hover {
   border-color: #e50914;
 }
@@ -144,4 +147,149 @@ body {
   text-align: center;
   padding: 16px 0;
   color: #bdbdbd;
+}
+
+/* Perfil / Datos personales */
+
+.perfil {
+  padding: 18px 0 28px 0;
+}
+
+.perfil_wrap {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.perfil_avatar {
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  border: 2px solid #bdbdbd;
+}
+
+.perfil_info {
+  flex: 1 1 250px;
+  min-width: 240px;
+}
+
+p.perfil-bio {
+  margin: 0;
+  line-height: 1.50;
+}
+
+.perfil_desc {
+  padding: 20px;
+}
+
+/* MATERIA */
+
+.materia {
+  padding: 18px 0 28px 0;
+}
+
+.materia_grid {
+  display: grid;
+  gap: 16px;
+}
+
+.materia_bloque {
+  border: 1px solid #cfcfcf50;
+  background-color: #bdbdbd15;
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+.materia_subtitulo {
+  font-size: 1.1em;
+  color: #ffffff;
+}
+
+.materia_texto {
+  line-height: 1.6;
+}
+
+.materia_lista {
+  line-height: 1.6;
+}
+
+
+/* FODA */
+
+.foda {
+  padding: 18px 0 28px 0;
+}
+
+.foda_grid {
+  display: grid;
+  gap: 12px;
+}
+
+.foda_card {
+  border: 1px solid #cfcfcf50;
+  background-color: #bdbdbd15;
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+.foda_titulo {
+  font-size: 1rem;
+  color: #ffffff
+}
+
+.foda-texto {
+  color: #cfcfcf
+}
+
+/*! MEDIA QUERIES */
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .perfil_wrap {
+    display: flex;
+    flex-direction: column;
+    /* Foto arriba, luego datos, luego bio */
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .perfil_avatar {
+    width: 240px;
+    height: 240px;
+    margin: 12px auto 12px auto;
+  }
+
+  .perfil_info {
+    width: 100%;
+  }
+
+  .perfil_lista {
+    display: block;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .perfil_desc {
+    padding: 0px;
+  }
+}
+
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  html {
+    font-size: 16px;
+  }
 }
