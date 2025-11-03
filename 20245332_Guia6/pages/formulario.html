@@ -100,7 +100,7 @@
                     <div class="row">
                         <div class="col-lg-6 pt-3">
                             <select class="form-select" aria-label="pais" id="idCmbPais">
-                                <option value = "0" selected>Seleccione un país</option>
+                                <option value="0" selected>Seleccione un país</option>
                                 <option value="1">El Salvador</option>
                                 <option value="2">Honduras</option>
                                 <option value="3">Panama</option>
@@ -113,8 +113,7 @@
                     <div class="row">
                         <div class="col-lg-6 pt-3">
                             <div class="form-floating">
-                                <textarea class="form-control" placeholder="Direccion" id="idTxtDireccion"
-                                    rows="4">
+                                <textarea class="form-control" placeholder="Direccion" id="idTxtDireccion" rows="4">
                                  </textarea>
                                 <label for="idTxtDireccion">
                                     <i class="bi bi-geo"></i> Dirección
@@ -173,6 +172,100 @@
                 </div>
             </div>
         </div>
+
+        <!--! MODAL PARA EDITAR -->
+
+        <div class="modal fade" id="idModalEditar" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modalLabelEditar">Editando paciente</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="idFormEditar">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="idTxtNombreEditar"
+                                            placeholder="Nombre del paciente">
+                                        <label for="idTxtNombreEditar">
+                                            <i class="bi bi-person-circle"></i> Nombre del paciente
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="idTxtApellidoEditar"
+                                            placeholder="Apellido del paciente">
+                                        <label for="idTxtApellidoEditar">
+                                            <i class="bi bi-person-check"></i> Apellido del paciente
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="idTxtFechaNacimientoEditar"
+                                            placeholder="Fecha de nacimiento" pattern="\d{2}-\d{2}-\d{4}">
+                                        <label for="idTxtFechaNacimientoEditar">
+                                            <i class="bi bi-calendar-date"></i> Fecha nacimiento
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="rdSexo" id="idRdMasculinoEditar">
+                                        <label class="form-check-label" for="idRdMasculinoEditar">
+                                            Masculino
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="rdSexo" id="idRdFemeninoEditar">
+                                        <label class="form-check-label" for="idRdFemeninoEditar">
+                                            Femenino
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 pt-3">
+                                    <select class="form-select" aria-label="pais" id="idCmbPaisEditar">
+                                        <option value="0" selected>Seleccione un país</option>
+                                        <option value="1">El Salvador</option>
+                                        <option value="2">Honduras</option>
+                                        <option value="3">Panama</option>
+                                        <option value="4">Costa Rica</option>
+                                        <option value="5">Belice</option>
+                                        <option value="6">Nicaragua</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 pt-3">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Direccion" id="idTxtDireccionEditar"
+                                            rows="4">
+                                 </textarea>
+                                        <label for="idTxtDireccionEditar">
+                                            <i class="bi bi-geo"></i> Dirección
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="idBtnGuardarCambios" data-bs-dismiss="modal">
+                            <i class="bi bi-plus-circle"></i> Guardar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <!--! MOSTRAR NOTIFICACIONES -->
         <div class="toast-container top-0 start-50 translate-middle-x pt-4 mt-1" style="z-index: 1035;">
